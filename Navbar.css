@@ -1,0 +1,126 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .navbar-search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+  }
+  
+  .navbar-search input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    font-size: 1rem;
+  }
+  
+  .search-button {
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #e0314b;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0.4;
+  }
+  
+  .navbar-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff385c;
+  }
+  
+  .navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-user a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .signup {
+    background-color: #ff385c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup:hover {
+    background-color: #e0314b;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar-search input {
+      font-size: 0.9rem;
+    }
+    
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar-search {
+      max-width: 400px;
+    }
+  
+    .signup {
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-search input {
+      font-size: 0.8rem;
+    }
+  
+    .navbar-search {
+      max-width: 300px;
+    }
+  
+    .signup {
+      padding: 7px 10px;
+    }
+  }
+  
